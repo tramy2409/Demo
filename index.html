@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Web của Tôi</title>
+    <style>
+        /* Thiết lập cột */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Thiết lập chiều rộng cột */
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
+
+        /* Thiết lập màu nền cho các cột */
+        .left-column {
+            flex: 1; /* Thay đổi giá trị flex */
+            max-width: 25%; /* Giới hạn chiều rộng tối đa */
+            background: #f0f0f0;
+        }
+
+        .middle-column {
+            flex: 2; /* Thay đổi giá trị flex */
+            background: #e0e0e0;
+        }
+
+        .right-column {
+            flex: 1; /* Thay đổi giá trị flex */
+            max-width: 25%; /* Giới hạn chiều rộng tối đa */
+            background: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="column left-column">
+            <!-- Cột bên trái - Danh sách bài -->
+            <h3>Danh sách bài</h3>
+            <ul>
+                <li>Bài 1</li>
+                <li>Bài 2</li>
+                <li>Bài 3</li>
+            </ul>
+        </div>
+
+        <div class="column middle-column">
+            <!-- Cột giữa - Nội dung -->
+            <h1>Tiêu đề nội dung</h1>
+            <p>Đây là nội dung chính của trang web.</p>
+        </div>
+
+        <div class="column right-column">
+            <!-- Cột bên phải - Kiến thức liên quan -->
+            <h3>Kiến thức liên quan</h3>
+            <p>Thông tin, liên kết hoặc tài liệu liên quan đến nội dung.</p>
+        </div>
+    </div>
+
+</body>
+</html>
